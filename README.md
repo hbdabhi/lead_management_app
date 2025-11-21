@@ -1,9 +1,9 @@
-📱 Mini Lead Management App (Flutter)
+**📱 Mini Lead Management App (Flutter)**
 
 A simple Lead Management App built using Flutter, Provider, and SQLite.
 This project allows users to add, view, update, filter, and delete leads.
 
-🚀 Features
+**🚀 Features**
 
 Add new leads
 
@@ -29,7 +29,7 @@ Local storage using SQLite
 
 State management using Provider
 
-📂 Project Structure
+**📂 Project Structure**
 lib/
 │
 ├── models/
