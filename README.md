@@ -1,16 +1,46 @@
-# lead_management
+**📱 Mini Lead Management App – Flutter Internship Assignment**
 
-A new Flutter project.
+A simple CRM-style Lead Management application built using Flutter, Provider, and SQLite.
+This project was created as part of the Flutter Internship Assignment.
 
-## Getting Started
+**🚀 Features**
+✅ Core Features
+Add new leads
+View all leads
+Update lead status
+    New
+    Contacted
+    Converted
+    Lost
+Edit and delete leads
+Status filter (All/New/Contacted/Converted/Lost)
+Local storage using SQLite
+State management using Provider
 
-This project is a starting point for a Flutter application.
+🏗️ Project Architecture
+lib/
+│
+├── models/
+│   └── lead.dart
+│
+├── db/
+│   └── db_helper.dart
+│
+├── providers/
+│   └── lead_provider.dart
+│
+├── screens/
+│   ├── home_page.dart
+│   ├── add_lead.dart
+│   ├── edit_lead.dart
+│   ├── lead_details.dart
+│
+└── widgets/
+    └── lead_tile.dart
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+📦 Packages Used
+**Package     	 Purpose**
+provider	     State management
+sqflite	       Local database
+path	         Database path
+google_fonts	 Modern UI fonts
