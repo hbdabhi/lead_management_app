@@ -6,7 +6,9 @@ This project was created as part of the Flutter Internship Assignment.
 **🚀 Features**
 ✅ Core Features
 Add new leads
+
 View all leads
+
 Update lead status
     New
     Contacted
