@@ -43,7 +43,7 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       body: provider.leads.isEmpty
-          ? Text("No Lead Added")
+          ? Center(child: Text("No Lead Added",style: TextStyle(fontSize: 18,fontWeight: FontWeight.w500),))
           : ListView.builder(
               itemCount: provider.leads.length,
               itemBuilder: (context, index) {
@@ -60,23 +60,28 @@ class _HomePageState extends State<HomePage> {
                 );
               },
             ),
-      floatingActionButton: FloatingActionButton(
-        autofocus: true,
-        child: Icon(Icons.add),
-        onPressed: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) {
-                return AddLead();
-              },
-            ),
-          ).then((value) {
-            setState(() {});
-          });
-        },
+      floatingActionButton: Padding(
+        padding: EdgeInsets.only(bottom:60 ,right:20),
+        child: FloatingActionButton(
+          backgroundColor: Colors.blue[800],
+          foregroundColor: Colors.white,
+
+          autofocus: true,
+          child: Icon(Icons.add),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) {
+                  return AddLead();
+                },
+              ),
+            ).then((value) {
+              setState(() {});
+            });
+          },
+        ),
       ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
   }
 }
